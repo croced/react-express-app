@@ -9,7 +9,7 @@ const Dashboard = ({ groups }) => {
         <div>
             <h2>Dashboard</h2>
             { groups.map(group => (
-                <TaskList id={group.id} name={group.name} />
+                <TaskList key={group.id} id={group.id} name={group.name} />
             )) }
         </div>
     );
